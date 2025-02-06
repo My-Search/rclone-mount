@@ -1,5 +1,5 @@
 # rclone-mount
-rclone挂载到本地指定目录下，使用systemctl管理挂载与卸载
+适用于Linux: rclone挂载到本地指定目录下，使用systemctl管理挂载与卸载
 
 一键脚本：
 ```bash
