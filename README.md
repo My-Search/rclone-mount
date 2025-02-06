@@ -4,7 +4,7 @@
 ## 1、前置rclone配置
 [添加一个云盘产品-OneDrive](https://github.com/My-Search/rclone-mount/blob/master/README.md)
 
-## 挂载管理工具
+## 2、挂载管理工具
 将添加的云产品挂载到本地目录
 ```bash
 # 注意前置条件是已经`rclone config`
