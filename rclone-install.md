@@ -204,7 +204,7 @@ version recommended):
         rclone authorize "onedrive"
 Then paste the result.
 Enter a value.
-#### 这里需要打开你的windows客户端，以命令行方式：`.\rclone.exe authorize "onedrive"` , 会打开浏览器，你需要登录OneDrive进行授权，授权成功后返回命令行窗口，得到一个JSON,全部复制！
+#### 这里需要打开你的windows，以命令行方式：`.\rclone.exe authorize "onedrive"` , 会在你的windows上打开浏览器，你需要登录OneDrive进行授权，授权成功后返回命令行窗口，得到一个JSON,全部复制！
 config_token> {"access_token":"...这里已被我删除..","token_type":"Bearer","refresh_token":"..这里已被我删除..","expiry":"2025-02-06T15:40:34.9969175+08:00"}
 
 Option config_type.
