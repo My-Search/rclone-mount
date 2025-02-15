@@ -65,6 +65,22 @@ EOF
     echo "重新加载 systemd 配置..."
     sudo systemctl daemon-reload
 
+    # 检测系统是否为 Debian/Ubuntu (使用 apt)
+    if command -v apt > /dev/null 2>&1; then
+        echo "Detected system: Debian/Ubuntu"
+        sudo apt update
+        sudo apt install -y fuse3
+    # 检测系统是否为 CentOS/RHEL (使用 yum)
+    elif command -v yum > /dev/null 2>&1; then
+        echo "Detected system: CentOS/RHEL"
+        sudo yum install -y fuse3
+    # 检测系统是否为 Fedora (使用 dnf)
+    elif command -v dnf > /dev/null 2>&1; then
+        echo "Detected system: Fedora"
+        sudo dnf install -y fuse3
+    else
+        echo "Package manager not recognized. Please install fuse3 manually."
+    fi
     # 启用并启动服务
     echo "启用并启动 rclone-onedrive 服务..."
     sudo systemctl enable $service_name
