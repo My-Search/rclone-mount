@@ -2,7 +2,7 @@
 适用于Linux: rclone挂载到本地指定目录下，使用systemctl管理挂载与卸载
 
 ## 1、前置rclone配置
-[添加一个云盘产品-OneDrive](https://github.com/My-Search/rclone-mount/blob/master/README.md)
+[添加一个云盘产品-OneDrive](https://github.com/My-Search/rclone-mount/blob/master/rclone-install.md)
 
 ## 2、挂载管理工具
 将添加的云产品挂载到本地目录
